@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.publication_activity);
 
         // Get the list of earthquakes from {@link QueryUtils}
-        List<Publication> publications = QueryUtils.extractFeatureFromJson();
+        List<Publication> publications = QueryUtils.fetchPublicationData(url);
 
         ListView publicationListView = (ListView) findViewById(R.id.list);
 
